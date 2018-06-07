@@ -32,6 +32,8 @@ public class UserController extends BaseController {
 	@RequestMapping(value = "api/login", method = RequestMethod.POST, consumes = { "application/json" }, produces = {
 			"application/json", "application/xml" })
 	public ResponseEntity<Employee> login(@RequestBody User user) throws EmployeeException {
+		
+		System.out.println(" Entered Login Service ");
 
 		User currentUser = userService.findByUsername(user);
 	

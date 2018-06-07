@@ -3,7 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cognizant</groupId>
 	<artifactId>AttApplication</artifactId>
-	<packaging>jar</packaging>
+	<!--<packaging>jar</packaging>  -->
+	<packaging>war</packaging>
 	<version>0.0.1</version>
 	<name>Att-Application-V1 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -134,6 +135,13 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
+		</dependency>
+		
+		<!-- marked the embedded servlet container as provided -->
+		<dependency>	
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 
